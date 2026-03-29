@@ -1,21 +1,50 @@
 # DrinkFYI Embed Widget
 
-> Embeddable DrinkFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> Beverage portal — cocktails, wine, beer, whiskey, tea, coffee, sake. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/drinkfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/drinkfyi-embed@1/dist/embed.min.js"></script>
+<div data-drinkfyi="recipe" data-slug="example"></div>
+```
+
+## Available Widget Types (6)
+
+- recipe: `data-drinkfyi="recipe"`
+- compare: `data-drinkfyi="compare"`
+- glossary: `data-drinkfyi="glossary"`
+- faq: `data-drinkfyi="faq"`
+- guide: `data-drinkfyi="guide"`
+- search: `data-drinkfyi="search"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-drinkfyi="recipe" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/drinkfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://drinkfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://drinkfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://drinkfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://drinkfyi.com
 - Widget docs: https://widget.drinkfyi.com
-- npm: https://www.npmjs.com/package/drinkfyi-embed
+- API documentation: https://drinkfyi.com/developers/
+- npm package: https://www.npmjs.com/package/drinkfyi-embed
 - GitHub: https://github.com/fyipedia/drinkfyi-embed
-- API: https://drinkfyi.com/developers/
 
-## Beverage FYI Widget Family
+## Beverage FYI Widget Network
 
 - [CocktailFYI Widget](https://widget.cocktailfyi.com)
 - [VinoFYI Widget](https://widget.vinofyi.com)
