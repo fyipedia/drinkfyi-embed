@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# DrinkFYI Embed Widget
+# Main site: https://drinkfyi.com
+# Widget docs: https://widget.drinkfyi.com
+# npm: https://www.npmjs.com/package/drinkfyi-embed
