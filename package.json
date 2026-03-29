@@ -1,0 +1,12 @@
+{
+  "name": "drinkfyi-embed",
+  "version": "0.1.0",
+  "description": "DrinkFYI embed widget — Beverage Portal",
+  "main": "dist/embed.min.js",
+  "module": "dist/embed.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": "https://github.com/fyipedia/drinkfyi-embed",
+  "homepage": "https://widget.drinkfyi.com",
+  "keywords": ["embed", "widget", "drinkfyi", "fyipedia"]
+}
