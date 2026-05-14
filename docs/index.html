@@ -1,39 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DrinkFYI Embed Widget — Beverage Portal</title>
-<link rel="canonical" href="https://widget.drinkfyi.com">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="DrinkFYI Embed Widget">
-<meta property="og:description" content="Embed DrinkFYI widgets on any website. Zero dependencies, Shadow DOM, 4 themes.">
-<meta property="og:image" content="https://drinkfyi.com/static/og/homepage.png">
-<meta property="og:url" content="https://widget.drinkfyi.com">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<!-- WIDGET-OSS-MONITOR-PATCH-SOFTWARESOURCECODE -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"DrinkFYI Embed Widget","url":"https://widget.drinkfyi.com","applicationCategory":"DeveloperApplication","operatingSystem":"Web"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DrinkFYI","item":"https://drinkfyi.com"},{"@type":"ListItem","position":2,"name":"Widget Docs"}]},{"@type":"SoftwareSourceCode","name":"drinkfyi-embed","codeRepository":"https://github.com/fyipedia/drinkfyi-embed","programmingLanguage":"TypeScript","runtimePlatform":"Browser","license":"https://opensource.org/licenses/MIT"}]}
-</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh;display:flex;align-items:center;justify-content:center}
-.container{text-align:center;max-width:600px;padding:40px}
-h1{font-size:2rem;margin-bottom:16px;color:#E11D48}
-p{font-size:1.1rem;line-height:1.6;color:#94a3b8;margin-bottom:24px}
-a{color:#E11D48;text-decoration:none}
-a:hover{text-decoration:underline}
-.badge{display:inline-block;background:#E11D4820;color:#E11D48;padding:4px 12px;border-radius:20px;font-size:0.85rem;margin-bottom:24px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beverage FYI Embed Widgets — Cocktails, Wine, Beer, Whiskey, Sake, Tea, Coffee for Any Website</title>
+  <meta name="description" content="Embed Beverage FYI widgets — 636 cocktails, wine varieties, 112 beer styles (BJCP), whiskey expressions, sake grades, tea categories, coffee origins — on any website. 7 npm packages, zero dependencies, free CDN.">
+  <meta name="theme-color" content="#E11D48">
+  <meta name="keywords" content="cocktail widget, wine widget, beer widget, whiskey widget, sake widget, tea widget, coffee widget, beverage, drinkfyi, fyipedia, embed">
+
+  <meta property="og:title" content="Beverage FYI Embed Widgets — 7 Site Family of Drink Reference">
+  <meta property="og:description" content="Embed cocktail recipes, wine, beer, whiskey, sake, tea, coffee widgets from the Beverage FYI family. BJCP/WSET/SAQ authoritative sources.">
+  <meta property="og:url" content="https://widget.drinkfyi.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://drinkfyi.com/static/og/homepage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Beverage FYI">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Beverage FYI Embed Widgets — 7 npm packages for drinks">
+  <meta name="twitter:description" content="Cocktails, wine, beer, whiskey, sake, tea, coffee — embed in one line of HTML.">
+  <meta name="twitter:image" content="https://drinkfyi.com/static/og/homepage.png">
+
+  <link rel="canonical" href="https://widget.drinkfyi.com">
+  <meta name="author" content="FYIPedia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://drinkfyi.com/static/favicon.ico" sizes="32x32">
+  <link rel="icon" href="https://drinkfyi.com/static/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cocktailfyi.com">
+  <link rel="dns-prefetch" href="https://vinofyi.com">
+  <link rel="dns-prefetch" href="https://beerfyi.com">
+  <link rel="dns-prefetch" href="https://whiskeyfyi.com">
+  <link rel="dns-prefetch" href="https://nihonshufyi.com">
+  <link rel="dns-prefetch" href="https://teafyi.com">
+  <link rel="dns-prefetch" href="https://brewfyi.com">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Beverage FYI Embed Widgets",
+        "url": "https://widget.drinkfyi.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Family of 7 embeddable widget packages for beverage reference: CocktailFYI, VinoFYI, BeerFYI, WhiskeyFYI, NihonshuFYI, TeaFYI, BrewFYI. BJCP/WSET/SAQ authoritative sources.",
+        "publisher": {"@type": "Organization", "name": "FYIPedia", "url": "https://fyipedia.com", "logo": "https://fyipedia.com/static/icon.svg"},
+        "isPartOf": {"@type": "WebSite", "name": "Beverage FYI", "url": "https://drinkfyi.com"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "FYIPedia", "item": "https://fyipedia.com"},
+          {"@type": "ListItem", "position": 2, "name": "Beverage FYI", "item": "https://drinkfyi.com"},
+          {"@type": "ListItem", "position": 3, "name": "Widget Family Docs"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Beverage FYI Embed Packages",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {"@type": "SoftwareSourceCode", "name": "cocktailfyi-embed", "url": "https://www.npmjs.com/package/cocktailfyi-embed", "codeRepository": "https://github.com/fyipedia/cocktailfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "vinofyi-embed", "url": "https://www.npmjs.com/package/vinofyi-embed", "codeRepository": "https://github.com/fyipedia/vinofyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "beerfyi-embed", "url": "https://www.npmjs.com/package/beerfyi-embed", "codeRepository": "https://github.com/fyipedia/beerfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "whiskeyfyi-embed", "url": "https://www.npmjs.com/package/whiskeyfyi-embed", "codeRepository": "https://github.com/fyipedia/whiskeyfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "nihonshufyi-embed", "url": "https://www.npmjs.com/package/nihonshufyi-embed", "codeRepository": "https://github.com/fyipedia/nihonshufyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "teafyi-embed", "url": "https://www.npmjs.com/package/teafyi-embed", "codeRepository": "https://github.com/fyipedia/teafyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "brewfyi-embed", "url": "https://www.npmjs.com/package/brewfyi-embed", "codeRepository": "https://github.com/fyipedia/brewfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "How many cocktails does CocktailFYI cover?", "acceptedAnswer": {"@type": "Answer", "text": "636 cocktails with full recipe data: ingredients, glassware, garnish, technique, ABV calculation, calorie estimate, IBA classification (Unforgettables, Contemporary Classics, New Era), 15 family categories (Sour, Daisy, Fizz, Highball, Punch, etc.). Recipe scaling supported."}},
+          {"@type": "Question", "name": "What beer styles does BeerFYI document?", "acceptedAnswer": {"@type": "Answer", "text": "112 beer styles per BJCP 2021 guidelines (Beer Judge Certification Program). Hop varieties (82), malt types (41), yeast strains, fermentation profiles. Brewing process steps, IBU/SRM/OG/FG ranges per style. Food pairing recommendations."}},
+          {"@type": "Question", "name": "Which wine regions does VinoFYI cover?", "acceptedAnswer": {"@type": "Answer", "text": "Wine regions worldwide with appellation hierarchies (DOC/DOCG/AOC/AVA/GI). Grape varieties (vinifera + hybrids), winery profiles, vintage chart, terroir data, food pairing matrix. Coverage of Old World + New World regions."}},
+          {"@type": "Question", "name": "What sake grades does NihonshuFYI explain?", "acceptedAnswer": {"@type": "Answer", "text": "Special designation sake (特定名称酒): Junmai, Honjozo, Ginjo, Daiginjo, Junmai Ginjo, Junmai Daiginjo. Rice polishing ratios (seimaibuai), brewing techniques (parallel multiple fermentation), 80 sake varieties, 50 breweries, rice varieties (Yamadanishiki, Gohyakumangoku, Omachi)."}},
+          {"@type": "Question", "name": "How does BrewFYI categorize coffee?", "acceptedAnswer": {"@type": "Answer", "text": "72 coffee varieties (Arabica + Robusta cultivars), processing methods (washed, natural, honey, anaerobic), roasting profiles, 21 brewing methods (espresso, pour over, French press, AeroPress, Chemex, V60, siphon). SCA cupping protocol with flavor wheel."}},
+          {"@type": "Question", "name": "Why a family of 7 sites instead of one beverage site?", "acceptedAnswer": {"@type": "Answer", "text": "Each beverage has dedicated domain depth: CocktailFYI for mixology, VinoFYI for oenology, BeerFYI for BJCP brewing, WhiskeyFYI for distillation, NihonshuFYI for Japanese rice wine specifics (different from western wine), TeaFYI for tea science, BrewFYI for coffee. Cross-referenced for cocktail ingredients (wine, whiskey, sake in cocktails)."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#E11D48' }, fontFamily: { mono: ['"JetBrains Mono"', '"Fira Code"', 'ui-monospace', 'monospace'] } } } }
+  </script>
+
+  <script>
+    (function(){
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+    })();
+  </script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/cocktailfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vinofyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/beerfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/whiskeyfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nihonshufyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/teafyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/brewfyi-embed@1/dist/embed.min.js"></script>
+
+  <style>
+    [x-cloak]{display:none!important}
+    :root{--accent:#E11D48} .accent-text{color:var(--accent)} .accent-bg{background-color:var(--accent)}
+    pre{tab-size:2;margin:0}
+    .code-block{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,monospace}
+    .hl-tag{color:#7dd3fc} .hl-attr{color:#86efac} .hl-val{color:#fde68a} .hl-comment{color:#475569;font-style:italic}
+    .site-card { transition: all 0.2s; }
+    .site-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(225, 29, 72, 0.3); }
+  </style>
 </head>
-<body>
-<div class="container">
-<span class="badge">Beverage FYI</span>
-<h1>DrinkFYI Embed Widget</h1>
-<p>Embeddable Beverage Portal widgets for any website. Coming soon.</p>
-<p><a href="https://drinkfyi.com">Visit DrinkFYI →</a></p>
-<p style="font-size:0.8rem;color:#64748b;margin-top:40px">Part of the <a href="https://fyipedia.com">FYIPedia</a> developer tools ecosystem.</p>
-</div>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="https://drinkfyi.com" class="flex items-center gap-2 font-bold text-lg" style="color: #E11D48">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <span>Beverage FYI</span>
+        <span class="text-xs font-normal text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full font-sans">Widget Family</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="#sites" class="hover:text-accent">7 Sites</a>
+        <a href="#quick-start" class="hover:text-accent">Quick Start</a>
+        <a href="#widgets" class="hover:text-accent">Gallery</a>
+        <a href="#faq" class="hover:text-accent">FAQ</a>
+        <a href="https://github.com/fyipedia" class="hover:text-accent" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-rose-50 via-white to-amber-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full" style="background: #E11D48; color: white">7 Widget Packages · 1 Ecosystem</span>
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight">Beverage FYI <span class="accent-text">Embed Widgets</span></h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        Embed <a href="https://cocktailfyi.com" class="accent-text font-semibold hover:underline">cocktails</a>,
+        <a href="https://vinofyi.com" class="accent-text font-semibold hover:underline">wine</a>,
+        <a href="https://beerfyi.com" class="accent-text font-semibold hover:underline">beer</a>,
+        <a href="https://whiskeyfyi.com" class="accent-text font-semibold hover:underline">whiskey</a>,
+        <a href="https://nihonshufyi.com" class="accent-text font-semibold hover:underline">sake</a>,
+        <a href="https://teafyi.com" class="accent-text font-semibold hover:underline">tea</a>, and
+        <a href="https://brewfyi.com" class="accent-text font-semibold hover:underline">coffee</a>
+        in any website. <strong>636 cocktails · 112 BJCP beer styles · 72 coffee varieties · 80 sake.</strong>
+      </p>
+      <p class="mt-4 text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+        BJCP + WSET + SAQ authoritative sources. Zero deps. Shadow DOM. 4 themes. Free CDN.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#quick-start" class="px-5 py-2.5 rounded-lg font-medium accent-bg text-white hover:opacity-90 transition">Get Started</a>
+        <a href="https://drinkfyi.com" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Browse Beverage FYI →</a>
+        <a href="https://github.com/fyipedia" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">The Beverage FYI Family</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Seven sites for the global beverage canon. Each authoritative for its drink category.</p>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #E11D48">C</div><div><h3 class="font-bold text-lg"><a href="https://cocktailfyi.com" class="accent-text hover:underline">CocktailFYI</a></h3><p class="text-xs text-slate-500">cocktailfyi.com · <a href="https://www.npmjs.com/package/cocktailfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>636 cocktails</strong> · IBA classification · 15 family categories · ABV/calories · scaling.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://cocktailfyi.com/cocktail/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Browse</a>
+            <a href="https://cocktailfyi.com/families/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Families</a>
+            <a href="https://cocktailfyi.com/ingredients/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Ingredients</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #7F1D1D">V</div><div><h3 class="font-bold text-lg"><a href="https://vinofyi.com" class="accent-text hover:underline">VinoFYI</a></h3><p class="text-xs text-slate-500">vinofyi.com · <a href="https://www.npmjs.com/package/vinofyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Wines · grape varieties · regions (DOC/DOCG/AOC/AVA) · wineries · vintage · food pairings.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://vinofyi.com/wine/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Wines</a>
+            <a href="https://vinofyi.com/grapes/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Grapes</a>
+            <a href="https://vinofyi.com/regions/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Regions</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #D97706">B</div><div><h3 class="font-bold text-lg"><a href="https://beerfyi.com" class="accent-text hover:underline">BeerFYI</a></h3><p class="text-xs text-slate-500">beerfyi.com · <a href="https://www.npmjs.com/package/beerfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>112 beer styles</strong> (BJCP 2021) · 82 hops · 41 malts · yeast · IBU/SRM/OG/FG.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://beerfyi.com/beer/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Styles</a>
+            <a href="https://beerfyi.com/hops/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Hops</a>
+            <a href="https://beerfyi.com/malts/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Malts</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #B45309">W</div><div><h3 class="font-bold text-lg"><a href="https://whiskeyfyi.com" class="accent-text hover:underline">WhiskeyFYI</a></h3><p class="text-xs text-slate-500">whiskeyfyi.com · <a href="https://www.npmjs.com/package/whiskeyfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>80 expressions</strong> · Scotch/Bourbon/Rye/Irish/Japanese · distilleries · cask types · regions.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://whiskeyfyi.com/whiskey/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Expressions</a>
+            <a href="https://whiskeyfyi.com/distilleries/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Distilleries</a>
+            <a href="https://whiskeyfyi.com/regions/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Regions</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #2563EB">N</div><div><h3 class="font-bold text-lg"><a href="https://nihonshufyi.com" class="accent-text hover:underline">NihonshuFYI</a></h3><p class="text-xs text-slate-500">nihonshufyi.com · <a href="https://www.npmjs.com/package/nihonshufyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>80 sake</strong> · Junmai/Honjozo/Ginjo/Daiginjo · 50 breweries · rice varieties (Yamadanishiki).</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://nihonshufyi.com/sake/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Sake</a>
+            <a href="https://nihonshufyi.com/breweries/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Breweries</a>
+            <a href="https://nihonshufyi.com/grades/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Grades</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #059669">T</div><div><h3 class="font-bold text-lg"><a href="https://teafyi.com" class="accent-text hover:underline">TeaFYI</a></h3><p class="text-xs text-slate-500">teafyi.com · <a href="https://www.npmjs.com/package/teafyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>60 tea varieties</strong> · 6 categories (white/green/oolong/black/dark/yellow) · teaware · brewing.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://teafyi.com/tea/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Teas</a>
+            <a href="https://teafyi.com/categories/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Categories</a>
+            <a href="https://teafyi.com/teaware/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Teaware</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #78350F">C</div><div><h3 class="font-bold text-lg"><a href="https://brewfyi.com" class="accent-text hover:underline">BrewFYI</a></h3><p class="text-xs text-slate-500">brewfyi.com · <a href="https://www.npmjs.com/package/brewfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>72 coffee varieties</strong> · 21 brewing methods · processing (washed/natural/honey) · SCA flavor wheel.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://brewfyi.com/coffee/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Varieties</a>
+            <a href="https://brewfyi.com/methods/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Methods</a>
+            <a href="https://brewfyi.com/regions/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Origins</a>
+          </div>
+        </article>
+
+        <article class="site-card md:col-span-2 lg:col-span-1 p-6 rounded-xl border-2 border-dashed border-rose-300 dark:border-rose-700 bg-rose-50 dark:bg-rose-950/30">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #6366F1, #8B5CF6, #A855F7)">∞</div><div><h3 class="font-bold text-lg"><a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia Umbrella</a></h3><p class="text-xs text-slate-500">Beverage FYI is 1 of 11 FYI Families</p></div></div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Cross-references: <a href="https://widget.creativefyi.com" class="accent-text hover:underline">Creative FYI</a> (color analysis for wine/beer), <a href="https://widget.bodyfyi.com" class="accent-text hover:underline">Health FYI</a> (nutrition for drinks), <a href="https://widget.toolfyi.com" class="accent-text hover:underline">Utility FYI</a> (unit conversion for recipes).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick-start" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Quick Start</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Add a script tag, drop a div, refresh. Widget renders in Shadow DOM.</p>
+      <div class="mt-8 max-w-3xl mx-auto">
+        <pre class="code-block"><code><span class="hl-comment">&lt;!-- Load any beverage widget script --&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/cocktailfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/beerfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+
+<span class="hl-comment">&lt;!-- Drop widgets --&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-cocktailfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"margarita"</span><span class="hl-tag">&gt;&lt;/div&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-beerfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"american-ipa"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="widgets" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Live Widget Gallery</h2>
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-3"><a href="https://widget.cocktailfyi.com" class="accent-text hover:underline">CocktailFYI</a> recipe card</h3>
+          <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 min-h-[180px]">
+            <div data-cocktailfyi="entity" data-slug="margarita" data-theme="light"></div>
+          </div>
+          <pre class="mt-3 code-block text-xs"><code><span class="hl-tag">&lt;div</span> <span class="hl-attr">data-cocktailfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"margarita"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3"><a href="https://widget.beerfyi.com" class="accent-text hover:underline">BeerFYI</a> style card</h3>
+          <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 min-h-[180px]">
+            <div data-beerfyi="entity" data-slug="american-ipa" data-theme="light"></div>
+          </div>
+          <pre class="mt-3 code-block text-xs"><code><span class="hl-tag">&lt;div</span> <span class="hl-attr">data-beerfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"american-ipa"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 space-y-4">
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">How many cocktails does CocktailFYI cover?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://cocktailfyi.com" class="accent-text hover:underline">CocktailFYI</a> covers <strong>636 cocktails</strong> with ingredients, glassware, garnish, technique, ABV/calorie calculation, IBA classification, <a href="https://cocktailfyi.com/families/" class="accent-text hover:underline">15 family categories</a>. Recipe scaling supported.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">What beer styles does BeerFYI document?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://beerfyi.com" class="accent-text hover:underline">BeerFYI</a> documents <strong>112 BJCP 2021 styles</strong>. <a href="https://beerfyi.com/hops/" class="accent-text hover:underline">82 hop varieties</a>, <a href="https://beerfyi.com/malts/" class="accent-text hover:underline">41 malts</a>, yeast strains. IBU/SRM/OG/FG ranges per style. Food pairings.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">Which wine regions does VinoFYI cover?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://vinofyi.com" class="accent-text hover:underline">VinoFYI</a> covers wine regions worldwide with appellation hierarchies (<strong>DOC/DOCG/AOC/AVA/GI</strong>). <a href="https://vinofyi.com/grapes/" class="accent-text hover:underline">Grape varieties</a>, wineries, vintage chart, terroir, food pairing matrix.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">What sake grades does NihonshuFYI explain?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://nihonshufyi.com" class="accent-text hover:underline">NihonshuFYI</a> explains all 6 special designations (特定名称酒): Junmai, Honjozo, Ginjo, Daiginjo, Junmai Ginjo, Junmai Daiginjo. <strong>80 sake</strong>, <strong>50 breweries</strong>, rice polishing ratios (seimaibuai), parallel multiple fermentation.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">How does BrewFYI categorize coffee?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://brewfyi.com" class="accent-text hover:underline">BrewFYI</a> categorizes <strong>72 coffee varieties</strong> (Arabica/Robusta cultivars) and <strong>21 brewing methods</strong> (espresso, pour over, AeroPress, V60, Chemex, French press, siphon). SCA cupping protocol with flavor wheel.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">Why a family of 7 sites?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">Each beverage has dedicated domain depth: <a href="https://cocktailfyi.com" class="accent-text hover:underline">CocktailFYI</a> for mixology, <a href="https://vinofyi.com" class="accent-text hover:underline">VinoFYI</a> for oenology, <a href="https://beerfyi.com" class="accent-text hover:underline">BeerFYI</a> for BJCP brewing, <a href="https://whiskeyfyi.com" class="accent-text hover:underline">WhiskeyFYI</a> for distillation, <a href="https://nihonshufyi.com" class="accent-text hover:underline">NihonshuFYI</a> for Japanese rice wine, <a href="https://teafyi.com" class="accent-text hover:underline">TeaFYI</a> for tea science, <a href="https://brewfyi.com" class="accent-text hover:underline">BrewFYI</a> for coffee. Cross-references for cocktail ingredients.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div><h3 class="font-bold mb-3">Beverage FYI</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://cocktailfyi.com" class="hover:accent-text">CocktailFYI</a></li><li><a href="https://vinofyi.com" class="hover:accent-text">VinoFYI</a></li><li><a href="https://beerfyi.com" class="hover:accent-text">BeerFYI</a></li><li><a href="https://whiskeyfyi.com" class="hover:accent-text">WhiskeyFYI</a></li><li><a href="https://nihonshufyi.com" class="hover:accent-text">NihonshuFYI</a></li><li><a href="https://teafyi.com" class="hover:accent-text">TeaFYI</a></li><li><a href="https://brewfyi.com" class="hover:accent-text">BrewFYI</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Widget Docs</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://widget.cocktailfyi.com" class="hover:accent-text">cocktailfyi</a></li><li><a href="https://widget.vinofyi.com" class="hover:accent-text">vinofyi</a></li><li><a href="https://widget.beerfyi.com" class="hover:accent-text">beerfyi</a></li><li><a href="https://widget.whiskeyfyi.com" class="hover:accent-text">whiskeyfyi</a></li><li><a href="https://widget.nihonshufyi.com" class="hover:accent-text">nihonshufyi</a></li><li><a href="https://widget.teafyi.com" class="hover:accent-text">teafyi</a></li><li><a href="https://widget.brewfyi.com" class="hover:accent-text">brewfyi</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">npm Packages</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://www.npmjs.com/package/cocktailfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">cocktailfyi-embed</a></li><li><a href="https://www.npmjs.com/package/vinofyi-embed" target="_blank" rel="noopener" class="hover:accent-text">vinofyi-embed</a></li><li><a href="https://www.npmjs.com/package/beerfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">beerfyi-embed</a></li><li><a href="https://www.npmjs.com/package/whiskeyfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">whiskeyfyi-embed</a></li><li><a href="https://www.npmjs.com/package/nihonshufyi-embed" target="_blank" rel="noopener" class="hover:accent-text">nihonshufyi-embed</a></li><li><a href="https://www.npmjs.com/package/teafyi-embed" target="_blank" rel="noopener" class="hover:accent-text">teafyi-embed</a></li><li><a href="https://www.npmjs.com/package/brewfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">brewfyi-embed</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Sister Families</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://fyipedia.com" class="hover:accent-text">FYIPedia</a></li><li><a href="https://widget.fyipedia.com" class="hover:accent-text">All Hubs</a></li><li><a href="https://widget.creativefyi.com" class="hover:accent-text">Creative FYI</a></li><li><a href="https://widget.naturefyi.com" class="hover:accent-text">Nature FYI</a></li><li><a href="https://widget.labfyi.com" class="hover:accent-text">Science FYI</a></li><li><a href="https://widget.bodyfyi.com" class="hover:accent-text">Health FYI</a></li><li><a href="https://drinkfyi.com" class="hover:accent-text">Beverage FYI Home</a></li></ul></div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-between gap-4">
+        <p>Built with care by <a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a>. MIT licensed.</p>
+        <p>Powered by <a href="https://drinkfyi.com" class="accent-text hover:underline">Beverage FYI</a> · BJCP/WSET/SAQ references.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
